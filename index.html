@@ -1,0 +1,123 @@
+/* Google Font */n@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Global Reset and Body Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Heading */
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Section Cards */nsection {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+section:hover {
+  transform: translateY(-5px);
+}
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+/* Forms and Inputs */nform {
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d8e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+input:focus,
+select:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+/* Buttons */nbutton {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+button[type="submit"],
+#startGame,
+#exportJSON,
+#exportXML {
+  background: #2980b9;
+  color: #fff;
+}
+button[type="submit"]:hover,
+#startGame:hover,
+#exportJSON:hover,
+#exportXML:hover {
+  background: #1a5276;
+  transform: translateY(-2px);
+}
+
+/* Game Choices */n#choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+#choices button {
+  flex: 1;
+  margin: 0 5px;
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+#choices button:hover {
+  background: #bdc3c7;
+}
+
+/* Result Display */n#result {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* History Log */n#log {
+  list-style-type: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+#log li {
+  padding: 8px;
+  border-bottom: 1px solid #ecf0f1;
+}
